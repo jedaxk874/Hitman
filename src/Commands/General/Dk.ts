@@ -20,6 +20,5 @@ export default class extends BaseCommand {
             thumbnail: image,
             mediaType: 1,
             sourceUrl: homepage
-        }))
-    }
+
 }
