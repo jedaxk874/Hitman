@@ -10,7 +10,7 @@ import { BaseCommand, Command, Message } from '../../Structures'
 })
 export default class extends BaseCommand {
     public override execute = async ({ reply }: Message): Promise<void> => {
-        const { description, name, homepage } = require(join(__dirname, '..', '..', '..', 'package.json')) as {
+        const { info, name, homepage } = require(join(__dirname, '..', '..', '..', 'info')) as {
             description: string
             homepage: string
             name: string
