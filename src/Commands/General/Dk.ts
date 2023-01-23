@@ -1,7 +1,7 @@
 import { join } from 'path'
 import { BaseCommand, Command, Message } from '../../Structures'
 
-@Command('dk', {
+@Command('info', {
     description: "Displays bot's info",
     usage: 'info',
     category: 'general',
@@ -17,7 +17,7 @@ export default class extends BaseCommand {
         }
         const image = this.client.assets.get('chisato') as Buffer
         const uptime = this.client.utils.formatSeconds(process.uptime())
-        const text = `*Chisato-WhatsApp* \n\n📡 *Description: ${description}*\n\n🛠️ *Commands:* ${this.handler.commands.size}\n\n🛡️ *Uptime:* ${uptime}`
+        const text = `*hitman* \n\n📡 *Description: ${description}*\n\n🛠️ *Commands:* ${this.handler.commands.size}\n\n🛡️ *Uptime:* ${uptime}`
         return void (await reply(image, 'image', undefined, undefined, text, undefined, {
             title: this.client.utils.capitalize(name),
             thumbnail: image,
