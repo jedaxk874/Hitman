@@ -12,7 +12,7 @@ export default class extends BaseCommand {
     public override execute = async (M: Message): Promise<void> => {
         const image = await this.client.utils.getBuffer('https://telegra.ph/file/bdd281b87aaa6f4ee0a67.jpg')
         const result = await this.client.utils.fetch<RepoInfo>(
-            'https://api.github.com/repos/AliAryanTech/Chisato-WhatsApp'
+            'https://api.github.com/repos/Dkhitman3/Hitman'
         )
         let text = ''
         text += `*${result.name}* ✨\n\n`
