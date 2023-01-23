@@ -10,7 +10,7 @@ import { BaseCommand, Command, Message } from '../../Structures'
 })
 export default class extends BaseCommand {
     public override execute = async (M: Message): Promise<void> => {
-        const image = await this.client.utils.getBuffer('https://telegra.ph/file/bdd281b87aaa6f4ee0a67.jpg')
+        const image = await this.client.utils.getBuffer('https://telegra.ph/file/1fed33d77671e79fe2c30.jpg')
         const result = await this.client.utils.fetch<RepoInfo>(
             'https://api.github.com/repos/Dkhitman3/Hitman'
         )
